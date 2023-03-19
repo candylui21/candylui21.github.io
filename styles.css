@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(207, 192, 189, 0.737254902);
+}
+
+.nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__image {
+  width: 50px;
+}
+
+.nav__menu {
+  flex: 1;
+  text-align: right;
+}
+.nav__menu__list {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+}
+.nav__menu__list-ref {
+  color: lightslategrey;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav__menu__list-ref:hover {
+  color: black;
+  font-size: bold;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.landing {
+  width: 90%;
+  color: lightslategray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.landing__intro {
+  font-size: 62px;
+  font-weight: bold;
+}
+.landing__desc .landing__link {
+  font-size: 14px;
+}
+.landing-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightslategrey;
+  padding: 12px 34px;
+  background: transparent;
+}
+.landing-btn:hover {
+  border: 1px solid black;
+  font-style: italic;
+}
+
+@media (max-width: 560px) {
+  .landing__intro {
+    font-size: 20px;
+  }
+  .nav__menu__list {
+    display: block;
+  }
+  .contact__list__link {
+    font-size: 10px;
+  }
+}
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+.about__title {
+  font-size: 36px;
+  font-weight: 600;
+}
+.about__desc {
+  color: lightslategray;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.tech-stacks {
+  background-color: rgba(207, 192, 189, 0.737254902);
+}
+.tech-stacks__title {
+  font-size: 36px;
+  width: fit-content;
+  padding: 20px 0 0 20px;
+  margin-bottom: 15px;
+}
+.tech-stacks__list {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tech-stacks__wrapper {
+  min-width: fit-content;
+  margin: 10px;
+  padding: 10px;
+}
+.tech-stacks__text {
+  color: black;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-stacks__text:hover {
+  color: lightslategray;
+  font-size: 20px;
+}
+.tech-stacks__icon {
+  font-size: 60px;
+}
+.tech-stacks__icon:hover {
+  font-size: 65px;
+}
+
+.project {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+.project-desc {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project__card {
+  margin: 10px;
+  max-width: 300px;
+  position: relative;
+  border: 2px lightslategray solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project__card__text {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.project__card__image {
+  margin: 10px;
+}
+.project__card__link {
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightslategrey;
+  padding: 5px;
+  font-size: 15px;
+  margin: 5px;
+}
+.project__card__link:hover {
+  font-style: italic;
+  color: black;
+  border: 1px solid black;
+}
+
+.footer {
+  min-height: 50vh;
+  width: 100%;
+  background-color: rgba(207, 192, 189, 0.737254902);
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+}
+.contact__title {
+  font-size: 36px;
+  max-width: fit-content;
+  padding: 20px 0 0 20px;
+}
+.contact__list {
+  max-width: fit-content;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  align-self: center;
+}
+.contact__list__link {
+  padding: 15px;
+  display: flex;
+  color: lightslategrey;
+  text-decoration: none;
+  font-size: 18px;
+}
+.contact__list__link:hover {
+  color: black;
+  font-size: bold;
+  font-size: 18px;
+  font-style: italic;
+}
