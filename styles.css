@@ -22,6 +22,7 @@ html {
 }
 .nav__image {
   width: 50px;
+  position: relative;
 }
 
 .nav__menu {
