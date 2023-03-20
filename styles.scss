@@ -92,7 +92,7 @@ html {
     }
     &__desc {
         color: $second-text-colour;
-        font-size: $text-font-size;
+        font-size: 20px;
         line-height: 30px;
         padding: 10px;
         font-family: $desc-font;
@@ -218,6 +218,7 @@ html {
         align-self: center;
 
         &__link {
+            font-family: $main-font;
             padding: 15px;
             display: flex;
             color: $second-text-colour;
@@ -237,6 +238,9 @@ html {
 @media only screen and (max-width: 560px) {
     .landing__intro {
         font-size: 20px;
+    }
+    .about__desc {
+        font-size: 18px;
     }
     .nav__menu__list {
         display: block;

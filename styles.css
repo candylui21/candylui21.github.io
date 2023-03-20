@@ -92,7 +92,7 @@ html {
 }
 .about__desc {
   color: lightslategrey;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
   padding: 10px;
   font-family: "Cardo", serif;
@@ -221,6 +221,7 @@ html {
   align-self: center;
 }
 .contact__list__link {
+  font-family: "Cinzel", serif;
   padding: 15px;
   display: flex;
   color: lightslategrey;
@@ -237,6 +238,9 @@ html {
 @media only screen and (max-width: 560px) {
   .landing__intro {
     font-size: 20px;
+  }
+  .about__desc {
+    font-size: 18px;
   }
   .nav__menu__list {
     display: block;
