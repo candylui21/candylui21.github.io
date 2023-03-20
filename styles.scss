@@ -218,7 +218,7 @@ html {
         align-self: center;
 
         &__link {
-            font-family: $main-font;
+            font-family: $desc-font;
             padding: 15px;
             display: flex;
             color: $second-text-colour;
@@ -226,6 +226,7 @@ html {
             font-size: 20px;
         }
         &__link:hover {
+            font-family: $desc-font;
             color: $main-text-colour;
             font-size: bold;
             font-size: 20px;

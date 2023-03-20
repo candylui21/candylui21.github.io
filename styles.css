@@ -221,7 +221,7 @@ html {
   align-self: center;
 }
 .contact__list__link {
-  font-family: "Cinzel", serif;
+  font-family: "Cardo", serif;
   padding: 15px;
   display: flex;
   color: lightslategrey;
@@ -229,6 +229,7 @@ html {
   font-size: 20px;
 }
 .contact__list__link:hover {
+  font-family: "Cardo", serif;
   color: black;
   font-size: bold;
   font-size: 20px;
