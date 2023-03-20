@@ -41,8 +41,8 @@ html {
 }
 .nav__menu__list-ref:hover {
   color: black;
-  font-size: bold;
   font-size: 15px;
+  color: black;
   font-style: italic;
 }
 
@@ -57,10 +57,9 @@ html {
 }
 .landing__intro {
   font-size: 62px;
-  font-weight: bold;
 }
 .landing__desc .landing__link {
-  font-size: 14px;
+  font-size: 15px;
 }
 .landing-btn {
   display: inline-block;
@@ -72,34 +71,26 @@ html {
 }
 .landing-btn:hover {
   border: 1px solid black;
+  color: black;
   font-style: italic;
 }
 
-@media (max-width: 560px) {
-  .landing__intro {
-    font-size: 20px;
-  }
-  .nav__menu__list {
-    display: block;
-  }
-  .contact__list__link {
-    font-size: 10px;
-  }
-}
 .about {
   width: 80%;
-  margin: auto;
-  text-align: center;
-  padding: 50px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 .about__title {
   font-size: 36px;
-  font-weight: 600;
 }
 .about__desc {
-  color: lightslategray;
+  color: lightslategrey;
   font-size: 15px;
-  font-weight: 300;
   line-height: 30px;
   padding: 10px;
 }
@@ -122,8 +113,7 @@ html {
 }
 .tech-stacks__wrapper {
   min-width: fit-content;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
 }
 .tech-stacks__text {
   color: black;
@@ -133,7 +123,7 @@ html {
   align-items: center;
 }
 .tech-stacks__text:hover {
-  color: lightslategray;
+  color: lightslategrey;
   font-size: 20px;
 }
 .tech-stacks__icon {
@@ -146,7 +136,7 @@ html {
 .project {
   width: 80%;
   margin: auto;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .project-title {
   display: flex;
@@ -169,9 +159,10 @@ html {
   max-width: 300px;
   position: relative;
   border: 2px lightslategray solid;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .project__card__text {
@@ -186,25 +177,25 @@ html {
 }
 .project__card__link {
   text-decoration: none;
-  color: black;
+  color: lightslategray;
   border: 1px solid lightslategrey;
   padding: 5px;
   font-size: 15px;
   margin: 5px;
 }
 .project__card__link:hover {
-  font-style: italic;
   color: black;
-  border: 1px solid black;
+  font-style: italic;
+  border: 1px solid;
 }
 
 .footer {
-  min-height: 50vh;
   width: 100%;
   background-color: rgba(207, 192, 189, 0.737254902);
 }
 
 .contact {
+  width: 90%;
   display: flex;
   flex-flow: column;
 }
@@ -227,11 +218,29 @@ html {
   display: flex;
   color: lightslategrey;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 .contact__list__link:hover {
   color: black;
   font-size: bold;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
+}
+
+@media only screen and (max-width: 560px) {
+  .landing__intro {
+    font-size: 20px;
+  }
+  .nav__menu__list {
+    display: block;
+  }
+  .contact__title {
+    font-size: 20px;
+  }
+  .contact__list__link {
+    font-size: 14px;
+  }
+  .project__card__desc {
+    font-size: 14px;
+  }
 }

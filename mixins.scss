@@ -1,0 +1,10 @@
+@use "./palette.scss";
+@mixin default-alignment {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin default-hover {
+    color: black;
+    font-style: italic;
+}
