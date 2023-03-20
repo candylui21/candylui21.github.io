@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Cinzel", serif;
 }
 
 html {
@@ -12,6 +11,7 @@ html {
 }
 // NAV
 .header {
+    font-family: $main-font;
     min-height: 100vh;
     width: 100%;
     background-color: $main-background-colour;
@@ -88,17 +88,20 @@ html {
     align-items: center;
     &__title {
         font-size: $title-font-sz;
+        font-family: $main-font;
     }
     &__desc {
         color: $second-text-colour;
         font-size: $text-font-size;
         line-height: 30px;
         padding: 10px;
+        font-family: $desc-font;
     }
 }
 //TECH STACK
 .tech-stacks {
     background-color: $main-background-colour;
+    font-family: $main-font;
     &__title {
         font-size: $title-font-sz;
         width: fit-content;
@@ -141,10 +144,12 @@ html {
     margin: auto;
     margin-top: 20px;
     &-title {
+        font-family: $main-font;
         @include mixins.default-alignment;
         font-size: $title-font-sz;
     }
     &-desc {
+        font-family: $main-font;
         margin-bottom: 10px;
         @include mixins.default-alignment;
     }
@@ -164,6 +169,7 @@ html {
         flex-direction: column;
         align-items: center;
         &__text {
+            font-family: $desc-font;
             width: 250px;
             display: flex;
             flex-direction: column;
