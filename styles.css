@@ -24,23 +24,22 @@ html {
   width: 50px;
   position: relative;
 }
-
 .nav__menu {
   flex: 1;
   text-align: right;
 }
-.nav__menu__list {
+.nav__menu--list {
   list-style: none;
   display: inline-block;
   padding: 5px 10px;
   position: relative;
 }
-.nav__menu__list-ref {
+.nav__menu--listRef {
   color: lightslategrey;
   text-decoration: none;
   font-size: 15px;
 }
-.nav__menu__list-ref:hover {
+.nav__menu--listRef:hover {
   color: black;
   font-size: 15px;
   color: black;
@@ -62,7 +61,7 @@ html {
 .landing__desc .landing__link {
   font-size: 15px;
 }
-.landing-btn {
+.landing__btn {
   display: inline-block;
   text-decoration: none;
   color: black;
@@ -70,7 +69,7 @@ html {
   padding: 12px 34px;
   background: transparent;
 }
-.landing-btn:hover {
+.landing__btn:hover {
   border: 1px solid black;
   color: black;
   font-style: italic;
@@ -142,19 +141,19 @@ html {
   margin: auto;
   margin-top: 20px;
 }
-.project-title {
+.project__title {
   font-family: "Cinzel", serif;
   display: flex;
   justify-content: center;
   font-size: 36px;
 }
-.project-desc {
+.project__desc {
   font-family: "Cinzel", serif;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
-.project-container {
+.project__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +171,7 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.project__card__text {
+.project__card--text {
   font-family: "Cardo", serif;
   width: 250px;
   display: flex;
@@ -180,10 +179,10 @@ html {
   align-items: center;
   padding: 10px;
 }
-.project__card__image {
+.project__card--image {
   margin: 10px;
 }
-.project__card__link {
+.project__card--link {
   text-decoration: none;
   color: lightslategray;
   border: 1px solid lightslategrey;
@@ -191,7 +190,7 @@ html {
   font-size: 15px;
   margin: 5px;
 }
-.project__card__link:hover {
+.project__card--link:hover {
   color: black;
   font-style: italic;
   border: 1px solid;
@@ -222,7 +221,7 @@ html {
   align-items: center;
   align-self: center;
 }
-.contact__list__link {
+.contact__list--link {
   font-family: "Cardo", serif;
   padding: 15px;
   display: flex;
@@ -230,7 +229,7 @@ html {
   text-decoration: none;
   font-size: 20px;
 }
-.contact__list__link:hover {
+.contact__list--link:hover {
   font-family: "Cardo", serif;
   color: black;
   font-size: bold;
@@ -238,7 +237,7 @@ html {
   font-style: italic;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .landing__intro {
     font-size: 20px;
   }
@@ -259,5 +258,30 @@ html {
   }
   .project__card__desc {
     font-size: 14px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .largeScreen {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+  }
+  .about {
+    width: 50%;
+  }
+  .tech-stacks {
+    background-color: white;
+    width: 50%;
+    margin-top: 25px;
+  }
+  .tech-stacks__text {
+    font-size: 13px;
+  }
+  .tech-stacks__text:hover {
+    font-size: 16px;
+  }
+  .project__card {
+    flex-direction: row;
+    max-width: fit-content;
   }
 }
