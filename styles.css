@@ -74,6 +74,11 @@ html {
   color: black;
   font-style: italic;
 }
+.landing__contact {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
 
 .about {
   width: 80%;

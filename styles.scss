@@ -74,6 +74,11 @@ html {
         border: 1px solid $hover-border-colour;
         @include mixins.default-hover;
     }
+    &__contact {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 // ABOUT
